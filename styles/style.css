@@ -17,6 +17,15 @@
 	/* startje */
 	--color-text:#111;
 	--color-background:#eee;
+	--color-coolblue:#0090e3;
+	--color-background-vakje:#f2f7fc;
+	--color-border-vakje: #dddddd;
+	--color-coolblue-green: #00b900;
+	--color-coolblue-darkgreen: #009900;
+}
+
+:root {
+	--font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -27,5 +36,343 @@
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
+*{
+	margin: 0;
+	padding: 0;
+}
 
+section{
+	margin-bottom: 2em;
+}
+
+h2 {
+	font-family: var(--font-family);
+	font-size: 1em;
+	margin-bottom: 1em;
+	margin-left: 1em;
+}
+ 
+h3 {
+	font-family: var(--font-family);
+}
+
+p{
+	font-family: var(--font-family);
+	font-size: 0.90em;
+}
+
+a{
+	font-family: var(--font-family);
+	font-size: 0.85em;
+}
+
+body{
+	/* overflow-x: hidden; */
+}
+
+body {
+	/* background-color: red; */
+
+}
+@media only screen and (min-width: 15em) {
+	body {
+		/* background-color: lime; */
+	}
+}
+@media only screen and (min-width: 30em) {
+	body {
+		/* background-color: yellow; */
+	}
+}
+
+
+.info{
+	display: flex;
+	overflow-x: hidden;
+}
+
+.test{
+	overflow-x: hidden;
+}
+
+.test ul{
+	display: flex;
+	flex-direction: column;
+}
+
+.test ul li{
+	display: flex;
+	flex-direction: column;
+}
+
+/* jouw code */	
+/* body {
+	margin: 0em;
+}
+
+header{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: var(--color-coolblue);
+}
+
+header>ul{
+	display: flex;
+	margin: 0;
+	list-style: none;
+}
+
+header>form{
+	order:1;
+	width: 10em;
+	flex
+}
+
+header a{
+	margin: 0em 5em 0em 5em;
+}
+
+nav ul{
+	display: none;
+}
+
+.assortiment{
+	display: none;
+} */
+
+
+/*BLADER DOOR ONZE CATEGORIEËN*/
+
+body section:nth-of-type(4) h2{
+}
+
+body section:nth-of-type(4)>ul{
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	align-items: center;
+	justify-content: center;
+	gap: 1em;
+	margin-bottom: 1em;
+}
+
+
+body section:nth-of-type(4)>ul li a{
+	width: 13.5em;
+	height: 10em;
+	background-color: var(--color-background-vakje);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 5px;
+	border-color: var(--color-border-vakje);
+	border-style: solid;
+	border-width: 1px;
+	text-align: center;
+	text-decoration: none;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+body section:nth-of-type(4)>ul li a img{
+	width: 160px;
+	height: 100px;
+}
+
+body section:nth-of-type(4)>ul li a p{
+	background-color: white;
+	font-weight: 600;
+	width: 20em;
+	padding: 1.4em 0em 1.4em 0em;
+	color: 	var(--color-coolblue);
+}
+
+body section:nth-of-type(4)>a {
+	color: var(--color-coolblue);
+	text-decoration: none;
+	margin-left: 1em;
+}
+
+
+
+
+
+
+
+
+/* Ontdek de verschillende merken */
+body section:nth-of-type(5){
+	display: flex;
+	flex-direction: column;
+}
+
+body section:nth-of-type(5)>ul{
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	overflow-x: auto;
+	flex-wrap: nowrap;
+	min-height: 350px;
+	/* overscroll-behavior: contain;
+	scroll-snap-type: x mandatory; */
+}
+
+body section:nth-of-type(5)>ul>li{
+	width: 80%;
+	min-width: 80%;
+	margin: 0em 1em 1em 1em;
+	border-radius: 10px;
+	border-color: var(--color-border-vakje);
+	border-style: solid;
+	border-width: 1px;
+	background-color: rgb(255, 255, 255);
+}
+
+body section:nth-of-type(5)>ul>li a{
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+body section:nth-of-type(5)>ul>li>a:first-of-type{
+	text-decoration: none;
+}
+
+body section:nth-of-type(5)>ul>li img{
+	width: 100%;
+	height: auto;
+	border-radius: 10px 10px 0px 0px;
+
+}
+
+body section:nth-of-type(5)>ul>li p{
+	background-color: white;
+	color: #000;
+	margin: 0em 1em 0em 1em;
+}
+
+body section:nth-of-type(5)>ul>li h3{
+	background-color: white;
+	color: var(--color-coolblue);
+	font-weight: 600;
+	font-size: 0.85em;
+	margin: 1em;
+}
+
+body section:nth-of-type(5)>ul>li>a:not(:first-of-type){
+	text-decoration: none;
+}
+
+body section:nth-of-type(5)>ul>li ul{
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 1em;
+}
+
+body section:nth-of-type(5)>ul>li ul li{
+	font-family: var(--font-family);
+}
+
+body section:nth-of-type(5)>ul>li ul li:not(:last-of-type){
+	padding-right:1em; 
+	margin-right: 1em;
+	border-color: var(--color-border-vakje);
+	border-right-style: solid;
+	border-width: 1px;
+}
+
+body section:nth-of-type(5)>ul>li ul li a{
+	text-decoration: none;
+	color: var(--color-coolblue);
+	font-size: 0.85em;
+
+}
+
+body section:nth-of-type(5)>a {
+	color: var(--color-coolblue);
+	text-decoration: none;
+	margin-left: 1em;
+}
+
+
+
+
+
+
+
+
+/* Dit heb je eerder bekeken */
+
+.eerder{
+}
+
+.eerder>section{
+	display: flex;
+	overflow-x: scroll;
+}
+
+.eerder>section section{
+	display: flex;
+	flex-direction: column;
+	min-width: 15em;
+	min-height: 10em;
+	margin-left: 1em;
+}
+
+.eerder section section:first-of-type a:first-of-type{
+
+}
+
+.eerder section section:first-of-type a:nth-of-type(2){
+	color: var(--color-coolblue);
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 1em;
+}
+
+.eerder section section:first-of-type a:nth-of-type(3){
+	color: var(--color-coolblue);
+	text-decoration: none;
+}
+
+.eerder section section:first-of-type p:nth-of-type(1){
+	font-weight: 1000;
+	font-size: 1em;
+}
+
+.eerder section section:first-of-type p:nth-of-type(2){
+	color: var(--color-coolblue-green);
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 1em;
+}
+
+.eerder section section:first-of-type a:first-of-type img{
+	width: 10em;
+}
+
+.eerder section section:nth-of-type(2){
+	background-color: var(--color-background-vakje);
+	padding: 1em;
+	border-radius: 10px;
+}
+
+.eerder section section:nth-of-type(2) a:first-of-type{
+	background-color: var(--color-coolblue-green);
+	padding: 1em;
+	text-align: center;
+	margin: 1em 0em 1em 0em;
+	color: var(--color-background);
+	text-decoration: none;
+	border-radius: 5px;
+	filter: drop-shadow(0em 0.2em var(--color-coolblue-darkgreen));
+}
+
+.eerder section section:nth-of-type(2) a:nth-of-type(2){
+	text-decoration: none;
+	color: var(--color-coolblue);
+}
