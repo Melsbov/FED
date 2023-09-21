@@ -22,6 +22,8 @@
 	--color-border-vakje: #dddddd;
 	--color-coolblue-green: #00b900;
 	--color-coolblue-darkgreen: #009900;
+	--color-coolblue-orange: #ff6600;
+
 }
 
 :root {
@@ -86,10 +88,10 @@ body {
 }
 
 
-.info{
+/* .info{
 	display: flex;
 	overflow-x: hidden;
-}
+} */
 
 .test{
 	overflow-x: hidden;
@@ -106,7 +108,7 @@ body {
 }
 
 /* jouw code */	
-/* body {
+body {
 	margin: 0em;
 }
 
@@ -114,6 +116,7 @@ header{
 	display: flex;
 	flex-wrap: wrap;
 	background-color: var(--color-coolblue);
+	justify-content: space-between;
 }
 
 header>ul{
@@ -124,12 +127,38 @@ header>ul{
 
 header>form{
 	order:1;
-	width: 10em;
-	flex
+	display: flex;
+	width: 100%;
+	padding:0.3em;
+	background-color: var(--color-background-vakje);
 }
 
-header a{
-	margin: 0em 5em 0em 5em;
+header>form>input{
+	flex-grow: 1;
+	border-radius: 3px 0px 0px 3px;
+	border-color: var(--color-border-vakje);
+	border-style: solid;
+	border-width: 1px;
+	padding-left: 1em;
+}
+
+header>form>button{
+	height: 2.5em;
+	width: 3em;
+	background-color: var(--color-coolblue);
+	border: none;
+	border-radius: 0px 3px 3px 0px;
+}
+
+header>form>button>svg{
+	height: 60%;
+	fill: var(--color-background);
+}
+
+header>nav{
+	height: 2.75em;
+	display: flex;
+	align-items: center;
 }
 
 nav ul{
@@ -138,7 +167,121 @@ nav ul{
 
 .assortiment{
 	display: none;
-} */
+}
+
+header>nav>button{
+	display: flex;
+	justify-content:start;
+	align-items: center;
+	width: 10em;
+	height: 2em;
+	background-color: transparent;
+	border: none;
+	align-items: center;
+	fill: var(--color-background);
+}
+
+header>nav>button>svg{
+	height: 80%;
+	margin: 1em;
+}
+
+header>a:first-of-type{
+	min-width: 5.2em;
+	height: 3em;
+}
+
+header>ul{
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	width: 10em;
+}
+
+header>ul>li{
+	margin: 0em 0.8em 0em 0em;
+}
+
+header>ul>li>button{
+	width: 2.5em;
+	height: 2.5em;
+	background-color: transparent;
+	border: none;
+}
+
+header>ul>li>button>svg{
+	width: 80%;
+	height: auto;
+	fill: var(--color-background);
+}
+
+header>ul>li:nth-of-type(1)>button{
+	position: relative;
+}
+
+header>ul>li:nth-of-type(1)>button>svg:last-of-type{
+	position: absolute;
+	width: 50%;
+	bottom: 1.4em;
+	right: 0em;
+	fill: var(--color-coolblue-orange)
+}
+
+
+
+
+
+.info ul{
+	display: flex;
+	list-style: none;
+	overflow-x: auto;
+	flex-wrap: nowrap;
+	/* background-color: #00b900; */
+	gap: 1em;
+}
+
+.info ul li{
+
+}
+
+.info ul:first-of-type li a {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	border: 1px solid var(--color-border-vakje);
+	border-radius: 5px;
+	text-decoration: none;
+	color: var(--color-coolblue);
+}
+
+.info img{
+	width: 20em;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	position: relative;
+	border-radius: 5px;
+}
+
+.info a p{
+	max-width: 10em;
+	position: relative;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	z-index: 2;
+	justify-self: start;
+	align-self: center;
+	padding-left: 1em;
+}
+
+.info>a {
+	text-decoration: none;
+	color: var(--color-text);
+	
+}
+
+
+
+
 
 
 /*BLADER DOOR ONZE CATEGORIEËN*/
