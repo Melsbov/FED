@@ -13,25 +13,147 @@
 </head>
 
 <body>
+	<div></div>
 	<header>
 		<nav>
-			<button>
+			<button class="menu" aria-label="menu">
 				<svg class="top-navigation-action--burger-icon" focusable="false" viewBox="0 0 20 16">
 					<path d="M18.15 2.4H1.08A1.15 1.15 0 0 1 0 1.2 1.15 1.15 0 0 1 1.08 0h17.07a1.15 1.15 0 0 1 1.08 1.2 1.15 1.15 0 0 1-1.08 1.2zm0 6.4H1.08A1.15 1.15 0 0 1 0 7.6a1.15 1.15 0 0 1 1.08-1.2h17.07a1.15 1.15 0 0 1 1.08 1.2 1.15 1.15 0 0 1-1.08 1.2zm0 6.4H1.08a1.21 1.21 0 0 1 0-2.4h17.07a1.21 1.21 0 0 1 0 2.4z"></path>
 				</svg>
 			</button>
+			<ul class="items">
+				<section>
+					<h3>Menu</h3>
+					<button>
+						<svg class="icon icon--size-4 icon--color-white" aria-hidden="true" viewBox="0 0 48 48" focusable="false">
+							<path d="M14.536 7.464a5 5 0 1 0-7.072 7.072L16.93 24l-9.465 9.465a5 5 0 1 0 7.072 7.07L24 31.072l9.465 9.464a5 5 0 1 0 7.07-7.07L31.072 24l9.464-9.464a5 5 0 1 0-7.07-7.072L24 16.93l-9.464-9.465Z"></path>
+						</svg>
+					</button>
+				</section>
+				<li>
+					<button class="computer">
+						<img src="images/computerstablets.png" alt="">
+						<p>Computers & tablets</p>
+						<svg class="icon icon--size-3 icon--color-silver" aria-hidden="true" viewBox="0 0 63 99" focusable="false">
+							<path d="M59.8 57.6l-38 38c-10.7 10.8-29.4-7-18.3-18l28-28L3.5 21C-8 9.5 12.2-6.5 21.7 3l38 38c4.4 5 4.4 12.3 0 16.6z"></path>
+            			</svg>
+					</button>
+					<ul class="computerul">
+						<li>
+							<button> Alle categorieën </button>
+							<h3>Computers & Tablets</h3>
+						</li>
+						<li>Laptops, desktops & monitoren</li>
+						<li>Zakelijk</li>
+						<li>Tablets & e-readers</li>
+						<li>Gaming</li>
+						<li>Printers & randapparatuur</li>
+						<li>Geheugen & opslag</li>
+						<li>Netwerk & internet</li>
+						<li>Computer onderdelen</li>
+					</ul>
+				</li>
+				<li>
+					<button><img src="images/beeldengeluid.png" alt="">
+						<p>Beeld & geluid</p>
+						<svg class="icon icon--size-3 icon--color-silver" aria-hidden="true" viewBox="0 0 63 99" focusable="false">
+                			<path d="M59.8 57.6l-38 38c-10.7 10.8-29.4-7-18.3-18l28-28L3.5 21C-8 9.5 12.2-6.5 21.7 3l38 38c4.4 5 4.4 12.3 0 16.6z"></path>
+						</svg>
+					</button>
+				</li>
+				<li>
+					<button><img src="images/telefonie.png" alt="">
+						<p>Telefonie</p>
+						<svg class="icon icon--size-3 icon--color-silver" aria-hidden="true" viewBox="0 0 63 99" focusable="false">            
+							<path d="M59.8 57.6l-38 38c-10.7 10.8-29.4-7-18.3-18l28-28L3.5 21C-8 9.5 12.2-6.5 21.7 3l38 38c4.4 5 4.4 12.3 0 16.6z"></path>
+						</svg>
+					</button>
+				</li>
+				<li>
+					<button>
+						<img src="images/huishouden.png" alt="">
+						<p>Huishouden & wonen</p>
+						<svg class="icon icon--size-3 icon--color-silver" aria-hidden="true" viewBox="0 0 63 99" focusable="false">                  
+							<path d="M59.8 57.6l-38 38c-10.7 10.8-29.4-7-18.3-18l28-28L3.5 21C-8 9.5 12.2-6.5 21.7 3l38 38c4.4 5 4.4 12.3 0 16.6z"></path>
+						</svg>
+					</button>
+				</li>
+				<li>
+					<button>
+						<img src="images/keuken.png" alt="">
+						<p>Keuken</p>
+						<svg class="icon icon--size-3 icon--color-silver" aria-hidden="true" viewBox="0 0 63 99" focusable="false">        
+							<path d="M59.8 57.6l-38 38c-10.7 10.8-29.4-7-18.3-18l28-28L3.5 21C-8 9.5 12.2-6.5 21.7 3l38 38c4.4 5 4.4 12.3 0 16.6z"></path>
+						</svg>
+					</button>
+				</li>
+				<li>
+					<button>
+						<img src="images/sport.png" alt="">
+						<p>Sport & verzorging</p>
+						<svg class="icon icon--size-3 icon--color-silver" aria-hidden="true" viewBox="0 0 63 99" focusable="false">
+							<path d="M59.8 57.6l-38 38c-10.7 10.8-29.4-7-18.3-18l28-28L3.5 21C-8 9.5 12.2-6.5 21.7 3l38 38c4.4 5 4.4 12.3 0 16.6z"></path>
+							</svg>
+						</button>
+					</li>
+				<li>
+					<button>
+						<img src="images/fotovideo.png" alt="">
+						<p>Foto & video</p>
+						<svg class="icon icon--size-3 icon--color-silver" aria-hidden="true" viewBox="0 0 63 99" focusable="false">
+							<path d="M59.8 57.6l-38 38c-10.7 10.8-29.4-7-18.3-18l28-28L3.5 21C-8 9.5 12.2-6.5 21.7 3l38 38c4.4 5 4.4 12.3 0 16.6z"></path>
+						</svg>
+					</button>
+				</li>
+				<li>
+					<button>
+						<img src="images/navigatie.png" alt="">
+						<p>Navigatie, riezen & fashion</p>
+						<svg class="icon icon--size-3 icon--color-silver" aria-hidden="true" viewBox="0 0 63 99" focusable="false">
+							<path d="M59.8 57.6l-38 38c-10.7 10.8-29.4-7-18.3-18l28-28L3.5 21C-8 9.5 12.2-6.5 21.7 3l38 38c4.4 5 4.4 12.3 0 16.6z"></path>
+						</svg>
+					</button>
+				</li>
+				<li>
+					<button>
+						<img src="images/tuinklussen.png" alt="">
+						<p>Tuin & klussen</p>
+						<svg class="icon icon--size-3 icon--color-silver" aria-hidden="true" viewBox="0 0 63 99" focusable="false">
+							<path d="M59.8 57.6l-38 38c-10.7 10.8-29.4-7-18.3-18l28-28L3.5 21C-8 9.5 12.2-6.5 21.7 3l38 38c4.4 5 4.4 12.3 0 16.6z"></path>
+						</svg>
+					</button>
+				</li>
+				<li>
+					<button>
+						<img src="images/coolblueenergie.png" alt="">
+						<p>Coolblue Energie</p>
+						<svg class="icon icon--size-3 icon--color-silver" aria-hidden="true" viewBox="0 0 63 99" focusable="false">
+							<path d="M59.8 57.6l-38 38c-10.7 10.8-29.4-7-18.3-18l28-28L3.5 21C-8 9.5 12.2-6.5 21.7 3l38 38c4.4 5 4.4 12.3 0 16.6z"></path>
+						</svg>
+					</button>
+				</li>
+				<li>
+					<button>
+						<img src="images/acties.png" alt="">
+						<p>Acties</p>
+						<svg class="icon icon--size-3 icon--color-silver" aria-hidden="true" viewBox="0 0 63 99" focusable="false">
+							<path d="M59.8 57.6l-38 38c-10.7 10.8-29.4-7-18.3-18l28-28L3.5 21C-8 9.5 12.2-6.5 21.7 3l38 38c4.4 5 4.4 12.3 0 16.6z"></path>
+						</svg>
+					</button>
+				</li>
+			</ul>
 			<ul>
-				<li><a href="">Computers & tablets</a></li>
-				<li><a href="">Beeld & geluid</a></li>
-				<li><a href="">Telefonie</a></li>
-				<li><a href="">Huishouden & wonen</a></li>
-				<li><a href="">Keuken</a></li>
-				<li><a href="">Sport & verzorging</a></li>
-				<li><a href="">Foto & video</a></li>
-				<li><a href="">Navigatie, riezen & fashion</a></li>
-				<li><a href="">Tuin & klussen</a></li>
-				<li><a href="">Coolblue Energie</a></li>
-				<li><a href="">Acties</a></li>	
+				<li>
+					<a href="">
+						<p>Taal:Nederlands (NL)</p>
+						<svg class="icon icon--size-3 icon--color-silver" aria-hidden="true" viewBox="0 0 63 99" focusable="false">
+							<path d="M59.8 57.6l-38 38c-10.7 10.8-29.4-7-18.3-18l28-28L3.5 21C-8 9.5 12.2-6.5 21.7 3l38 38c4.4 5 4.4 12.3 0 16.6z"></path>
+						</svg>
+					</a>
+				</li>
+				<li><a href=""><p>Mijn Coolblue</p></a></li>
+				<li><a href=""><p>Klantenservice</p></a></li>
+				<li><a href=""><p>Zakelijk</p></a></li>	
 			</ul>
 		</nav>
 		<a href="">
@@ -48,9 +170,9 @@
 				</svg>
 			</button>
 		</form>
-		<ul>
+		<ul>	
 			<!-- <li><button>E</button></li> -->
-			<li><button>
+			<li><button aria-label="account">
 				<svg class="icon icon--size-6" aria-hidden="true" viewBox="0 0 48 48" focusable="false">                       
 					<path d="M10.9179 37.9663C9.64698 39.4859 8.96481 41.364 8.7516 42.5367C8.45521 44.1668 6.89346 45.248 5.26333 44.9516C3.6332 44.6552 2.55199 43.0935 2.84838 41.4633C3.21295 39.4582 4.26411 36.5697 6.31543 34.117C8.43468 31.5831 11.6841 29.4667 16.2 29.4667H31.8C36.3159 29.4667 39.5653 31.5831 41.6846 34.117C43.7359 36.5697 44.787 39.4582 45.1516 41.4633C45.448 43.0935 44.3668 44.6552 42.7366 44.9516C41.1065 45.248 39.5448 44.1668 39.2484 42.5367C39.0352 41.364 38.353 39.4859 37.0821 37.9663C35.8791 36.528 34.2175 35.4667 31.8 35.4667H16.2C13.7825 35.4667 12.1209 36.528 10.9179 37.9663Z"></path>
 					<path fill-rule="evenodd" d="M24 21.2667C27.3873 21.2667 30.1333 18.5207 30.1333 15.1333C30.1333 11.746 27.3873 9 24 9C20.6126 9 17.8667 11.746 17.8667 15.1333C17.8667 18.5207 20.6126 21.2667 24 21.2667ZM24 27.2667C30.701 27.2667 36.1333 21.8344 36.1333 15.1333C36.1333 8.43228 30.701 3 24 3C17.2989 3 11.8667 8.43228 11.8667 15.1333C11.8667 21.8344 17.2989 27.2667 24 27.2667Z"></path>
@@ -60,12 +182,12 @@
 					<path fill="#FFF" transform="rotate(45 49.5 49.5)" d="M49.5 21c-3 0-5.5 2.3-5.5 5.2V44H26.2c-3 0-5.2 2.6-5.2 5.5 0 3 2.3 5.5 5.2 5.5H44v17.8c0 3 2.6 5.2 5.5 5.2 3 0 5.5-2.3 5.5-5.2V55h17.8c3 0 5.2-2.6 5.2-5.5 0-3-2.3-5.5-5.2-5.5H55V26.2c0-3-2.6-5.2-5.5-5.2z"></path>
 				</svg>
 			</button></li>
-			<li><button>
+			<li><button aria-label="favorieten">
 				<svg class="icon icon--size-6" aria-hidden="true" viewBox="0 0 48 48" focusable="false">                   
 					<path d="M27 13.3c0-.5.3-1.1 1-1.9.6-.8 1.5-1.4 2.5-1.9 1-.4 2-.5 3-.3 1.1.2 2.4.9 3.8 2.4 1.8 1.9 2 4.2 1.4 7-.8 2.9-2.5 5.8-4.2 8.2-1.7 2.5-4 5.8-6.3 8.4a24 24 0 0 1-3 3 5 5 0 0 1-1.2.8 5 5 0 0 1-1.2-.7 24 24 0 0 1-3-3.1c-2.3-2.6-4.6-5.9-6.3-8.4a26.6 26.6 0 0 1-4.2-8.2c-.7-2.8-.3-5.1 1.4-7a7.3 7.3 0 0 1 3.7-2.4 5 5 0 0 1 3.1.3c1 .5 1.9 1.1 2.5 2 .7.7 1 1.3 1 1.8a3 3 0 0 0 3 2.7 3 3 0 0 0 3-2.7ZM24 45c2 0 3.7-1 4.9-2 1.3-1 2.6-2.4 3.9-3.9 2.5-2.9 5-6.4 6.7-8.8 1.8-2.6 4-6.3 5-10.3 1-4 .8-8.7-2.8-12.5a13.3 13.3 0 0 0-6.9-4.1 11 11 0 0 0-6.7.6c-1.6.7-3 1.7-4.1 2.9A12.7 12.7 0 0 0 19.9 4a11 11 0 0 0-6.7-.6A13 13 0 0 0 3.6 20c1 3.9 3.1 7.6 5 10.2 1.7 2.4 4.1 6 6.6 8.8 1.3 1.5 2.6 2.8 4 3.9 1.1 1 2.8 2 4.8 2"></path>
 				</svg>
 			</button></li>
-			<li><button>
+			<li><button aria-label="winkelwagen">
 				<svg class="icon icon--size-6" aria-hidden="true" viewBox="0 0 48 48" focusable="false">      
 					<path d="M0 6a3 3 0 0 1 3-3h7.5a3 3 0 0 1 2.944 2.422L17.678 27h20.91l3.46-19.103a3 3 0 0 1 5.904 1.07l-3.907 21.568A3 3 0 0 1 41.093 33H15.209a3 3 0 0 1-2.944-2.422L8.031 9H3a3 3 0 0 1-3-3Z"></path>
 					<path d="M23 40.5a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0ZM41 40.5a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z"></path>
@@ -78,13 +200,50 @@
 
 
 	<main>
+		<h1 class="sr-only">Welkom bij coolblue hbvdfkjvkjndfnvjfd</h1>
 		<section class="test">
+			<h2 class="sr-only">De voordelen van CB op een rijtje</h2>
 			<ul>
-				<li><img src="" alt=""><a href="">Voor <strong>zondag 23.59 uur</strong> besteld, maandag <strong>gratis </strong>bezorgd</a></li>
-				<li><img src="" alt=""><a href=""><strong>Gratis </strong>ruilen</a></li>
-				<li><img src="" alt=""><a href="">14 échte winkels</a></li>
-				<li><img src="" alt=""><a href="">Onze app</a></li>
-				<li><img src="" alt=""><a href=""><strong>Beste </strong>webwinkel 2022</a></li>
+				<li>
+					<a href="">
+						<svg class="icon icon--color-green" aria-hidden="true" viewBox="0 0 48 48" focusable="false">
+							<path d="M39.39 9.54a5 5 0 1 1 7.22 6.92L23.622 40.447A4.984 4.984 0 0 1 20.052 42a4.984 4.984 0 0 1-3.6-1.477L1.464 25.535a5 5 0 1 1 7.072-7.07l11.388 11.388L39.39 9.54Z"></path>
+						</svg>
+						Voor <strong>zondag 23.59 uur</strong> besteld, maandag <strong>gratis </strong>bezorgd
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<svg class="icon icon--color-green" aria-hidden="true" viewBox="0 0 48 48" focusable="false">
+							<path d="M39.39 9.54a5 5 0 1 1 7.22 6.92L23.622 40.447A4.984 4.984 0 0 1 20.052 42a4.984 4.984 0 0 1-3.6-1.477L1.464 25.535a5 5 0 1 1 7.072-7.07l11.388 11.388L39.39 9.54Z"></path>
+						</svg>
+						<strong>Gratis </strong>ruilen
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<svg class="icon icon--color-green" aria-hidden="true" viewBox="0 0 48 48" focusable="false">
+							<path d="M39.39 9.54a5 5 0 1 1 7.22 6.92L23.622 40.447A4.984 4.984 0 0 1 20.052 42a4.984 4.984 0 0 1-3.6-1.477L1.464 25.535a5 5 0 1 1 7.072-7.07l11.388 11.388L39.39 9.54Z"></path>
+						</svg>
+						14 échte winkels
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<svg class="icon icon--color-green" aria-hidden="true" viewBox="0 0 48 48" focusable="false">
+							<path d="M39.39 9.54a5 5 0 1 1 7.22 6.92L23.622 40.447A4.984 4.984 0 0 1 20.052 42a4.984 4.984 0 0 1-3.6-1.477L1.464 25.535a5 5 0 1 1 7.072-7.07l11.388 11.388L39.39 9.54Z"></path>
+						</svg>
+						Onze app
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<svg class="icon icon--color-green" aria-hidden="true" viewBox="0 0 48 48" focusable="false">
+							<path d="M39.39 9.54a5 5 0 1 1 7.22 6.92L23.622 40.447A4.984 4.984 0 0 1 20.052 42a4.984 4.984 0 0 1-3.6-1.477L1.464 25.535a5 5 0 1 1 7.072-7.07l11.388 11.388L39.39 9.54Z"></path>
+						</svg>
+						<strong>Beste </strong>webwinkel 2022
+					</a>
+				</li>
 			</ul>
 			<ul>
 				<li><a href="">Zakelijk</a></li>
@@ -93,27 +252,6 @@
 			</ul>
 		</section>
 
-
-
-
-
-
-		<section>
-			<a href="">
-				<div>
-					<h2></h2>
-					<p></p>
-				</div>
-				<img src="" alt="">
-			</a>
-			<a href="">
-				<div>
-					<h2></h2>
-					<p></p>
-				</div>
-				<img src="" alt="">
-			</a>
-		</section>
 
 
 
@@ -128,11 +266,19 @@
 						<p>BlueBuilt: ons eigen accessoire-merk met 5 jaar garantie.</p>
 						<img src="/images/vrouwtje.png" alt="">
 					</a>
+					<a href="">
+						<svg class="icon icon--color-blue" aria-hidden="true" viewBox="0 0 48 48" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M42 24c0 9.941-8.059 18-18 18S6 33.941 6 24 14.059 6 24 6s18 8.059 18 18Zm6 0c0 13.255-10.745 24-24 24S0 37.255 0 24 10.745 0 24 0s24 10.745 24 24Zm-33.377 2.543a3 3 0 0 0-5.245 2.914c3.017 5.43 7.677 7.81 12.189 8.277 4.337.449 8.599-.858 11.233-2.834a3 3 0 1 0-3.6-4.8c-1.365 1.024-4.103 1.967-7.016 1.666-2.738-.283-5.578-1.653-7.561-5.223ZM17 13a3 3 0 0 1 3 3v4a3 3 0 1 1-6 0v-4a3 3 0 0 1 3-3Zm18 3a3 3 0 1 0-6 0v4a3 3 0 1 0 6 0v-4Z"></path></svg>
+						Klantbeoordeling <strong>9,2/10</strong>
+					</a>
 				</li>
 				<li>
 					<a href="">
 						<p>Iemand verrassen? Geef een cadeaubon. Je bepaalt zelf het bedrag vanaf €10,-.</p>
 						<img src="/images/poppetje.png" alt="">
+					</a>
+					<a href="">
+						<svg class="icon icon--color-blue" aria-hidden="true" viewBox="0 0 323 323" focusable="false"><path d="M0 162c0 89 72.3 161.4 161.5 161.4l.4-100.8h-38v-47h38V152c0-34 25-61.7 56.4-61.7h37.8V137h-37.8c-4.5 0-9.5 6-9.5 14.3v24h47.3v47.2H209v93.7C275.3 296 323 234.5 323 162 323 72.6 250.7.3 161.5.3S0 72.7 0 162z"></path></svg>
+						<strong>450.025</strong> vind-ik-leuks
 					</a>
 				</li>
 				<li>
@@ -140,18 +286,19 @@
 						<p>We adviseren je over het beste zonnedak voor jou en komen het zelf installeren</p>
 						<img src="/images/mannetje.png" alt="">
 					</a>
+					<a href="">
+						<svg class="icon icon--color-blue" aria-hidden="true" viewBox="0 0 99 91" focusable="false"><path d="M55 15.7c-6-2-9.6 6.5-3.7 9.2l19 7.2h-55L40 8.7c4.2-5-2.5-11-7-7l-31 31c-1 1-2 1.8-2 3.7V86c0 2.5 2 5 4.6 5h90c2.5 0 4.5-2 4.5-4.5V36.3c0-1.8-1-3-3-4-8-3-41-16.6-41-16.6zM9 70V41.4h29c1 2.4 1.4 5.2 1.4 8 0 12-9.8 22-22 22-2.7 0-6-.3-8.4-1.2z"></path></svg>
+						7 dagen per week <strong>gratis</strong> thuisbezorgd
+					</a>
 				</li>
 			</ul>
-			<a href=""><img src="" alt="">Klantbeoordeling 9,2/10</a>
-			<a href=""><img src="" alt="">450.025 vind-ik-leuks</a>
-			<a href=""><img src="" alt="">7 dagen per week gratis thuisbezorgd</a>
 		</section>
 
 
 
 
 
-		<section>
+		<section class="blader">
 			<h2>Blader door onze categorieën</h2>
 			<ul>
 				<li>
@@ -187,7 +334,7 @@
 
 
 
-		<section>
+		<section class="ontdek">
 			<h2>Ontdek de verschillende merken</h2>
 			<ul>
 				<li>
@@ -253,8 +400,14 @@
 					<a href="">
 						<img src="images/stofzuiger.png" alt="">
 					</a>
-					<a href="">Samsung Jet 70 Turbo</a>
-					<a href=""><img src="" alt="">195 reviews</a>
+					<a href="product.html">Samsung Jet 70 Turbo</a>
+					<a href="">
+						<svg class="icon icon--size-4 icon--color-green icon--valign-top" aria-hidden="true" viewBox="0 0 99 99" focusable="false"><circle cx="49.5" cy="49.5" r="49.5"></circle><path d="M49.5 99C77.5 99 99 76.8 99 49.5S77.5 0 49.5 0v99z"></path><path fill="var(--cb-icon-color-mask)" d="M53.4 24.2l5 15.6s11.7-.2 16.4-.1c4 0 5.9 4.9 2.4 7.5-3.7 2.6-13.3 9.5-13.3 9.5L69 72.2c1.2 4-3.1 7-6.4 4.6L49.5 65.3 36.3 76.8c-3.4 2.4-7.6-.7-6.4-4.6l5.2-15.5-13.3-9.5c-3.1-2.2-2.1-7.4 2.4-7.5l16.4.1 4.9-15.6c1.4-4.1 6.7-3.7 7.9 0z"></path></svg>
+						<svg class="icon icon--size-4 icon--color-green icon--valign-top" aria-hidden="true" viewBox="0 0 99 99" focusable="false"><circle cx="49.5" cy="49.5" r="49.5"></circle><path d="M49.5 99C77.5 99 99 76.8 99 49.5S77.5 0 49.5 0v99z"></path><path fill="var(--cb-icon-color-mask)" d="M53.4 24.2l5 15.6s11.7-.2 16.4-.1c4 0 5.9 4.9 2.4 7.5-3.7 2.6-13.3 9.5-13.3 9.5L69 72.2c1.2 4-3.1 7-6.4 4.6L49.5 65.3 36.3 76.8c-3.4 2.4-7.6-.7-6.4-4.6l5.2-15.5-13.3-9.5c-3.1-2.2-2.1-7.4 2.4-7.5l16.4.1 4.9-15.6c1.4-4.1 6.7-3.7 7.9 0z"></path></svg>
+						<svg class="icon icon--size-4 icon--color-green icon--valign-top" aria-hidden="true" viewBox="0 0 99 99" focusable="false"><circle cx="49.5" cy="49.5" r="49.5"></circle><path d="M49.5 99C77.5 99 99 76.8 99 49.5S77.5 0 49.5 0v99z"></path><path fill="var(--cb-icon-color-mask)" d="M53.4 24.2l5 15.6s11.7-.2 16.4-.1c4 0 5.9 4.9 2.4 7.5-3.7 2.6-13.3 9.5-13.3 9.5L69 72.2c1.2 4-3.1 7-6.4 4.6L49.5 65.3 36.3 76.8c-3.4 2.4-7.6-.7-6.4-4.6l5.2-15.5-13.3-9.5c-3.1-2.2-2.1-7.4 2.4-7.5l16.4.1 4.9-15.6c1.4-4.1 6.7-3.7 7.9 0z"></path></svg>
+						<svg class="icon icon--size-4 icon--color-green icon--valign-top" aria-hidden="true" viewBox="0 0 99 99" focusable="false"><circle cx="49.5" cy="49.5" r="49.5"></circle><path d="M49.5 99C77.5 99 99 76.8 99 49.5S77.5 0 49.5 0v99z"></path><path fill="var(--cb-icon-color-mask)" d="M53.4 24.2l5 15.6s11.7-.2 16.4-.1c4 0 5.9 4.9 2.4 7.5-3.7 2.6-13.3 9.5-13.3 9.5L69 72.2c1.2 4-3.1 7-6.4 4.6L49.5 65.3 36.3 76.8c-3.4 2.4-7.6-.7-6.4-4.6l5.2-15.5-13.3-9.5c-3.1-2.2-2.1-7.4 2.4-7.5l16.4.1 4.9-15.6c1.4-4.1 6.7-3.7 7.9 0z"></path></svg>
+						<svg class="icon icon--size-4 icon--color-green icon--valign-top" aria-hidden="true" viewBox="0 0 99 99" focusable="false"><path d="M49.7 0h-.2C22.2 0 0 22.2 0 49.5S22.2 99 49.5 99h.2V0z"></path><path fill="var(--cb-spec-color-icon-inactive)" d="M49.5 0h-.2v99h.2C76.8 99 99 76.8 99 49.5S76.8 0 49.5 0z"></path><path fill="var(--cb-icon-color-mask)" d="M53.4 24.2l5 15.6s11.7-.2 16.4-.1c4 0 5.9 4.9 2.4 7.5-3.7 2.6-13.3 9.5-13.3 9.5L69 72.2c1.2 4-3.1 7-6.4 4.6L49.5 65.3 36.3 76.8c-3.4 2.4-7.6-.7-6.4-4.6l5.2-15.5-13.3-9.5c-3.1-2.2-2.1-7.4 2.4-7.5l16.4.1 4.9-15.6c1.4-4.1 6.7-3.7 7.9 0z"></path></svg>
+						195 reviews</a>
 					<p>299,-</p>
 					<p><img src="" alt="">Morgen bezorgd</p>
 				</section>
@@ -273,48 +426,58 @@
 
 
 
-		<section>
-			<h2>Alles voor je studentenhuis</h2>
-			<p>Van wasmachines en magnetrons tot bureaus: met deze producten is je huis compleet.</p>
+		<section class="studenten">
+			<h2>Heb jij onze topdeals al gezien?</h2>
+			<p>We hebben de beste aanbiedingen voor je op een rijtje gezet. Sla snel je slag.</p>
 			<section>
-				<h2>Studentenhuisspullen</h2>
-				<p>Kan je op rekenen</p>
-				<div>
-					<a href="">
-						<img src="" alt="">
-					</a>
-					<a href="">Inventum OV2078</a>
-					<a href=""><img src="" alt="">74 reviews</a>
-					<p>Adviesprijs 109,- 85,-</p>
-					<p><img src="" alt="">Bak meerdere pizza's tegelijkertijd dankzij de 2 inschuifhoogtes.</p>
-				</div>
-				<div>
-					<a href="">
-						<img src="" alt="">
-					</a>
-					<a href="">Inventum OV2078</a>
-					<a href=""><img src="" alt="">74 reviews</a>
-					<p>Adviesprijs 109,- 85,-</p>
-					<p><img src="" alt="">Bak meerdere pizza's tegelijkertijd dankzij de 2 inschuifhoogtes.</p>
-				</div>
-				<div>
-					<a href="">
-						<img src="" alt="">
-					</a>
-					<a href="">Inventum OV2078</a>
-					<a href=""><img src="" alt="">74 reviews</a>
-					<p>Adviesprijs 109,- 85,-</p>
-					<p><img src="" alt="">Bak meerdere pizza's tegelijkertijd dankzij de 2 inschuifhoogtes.</p>
-				</div>
-				<div>
-					<a href="">
-						<img src="" alt="">
-					</a>
-					<a href="">Inventum OV2078</a>
-					<a href=""><img src="" alt="">74 reviews</a>
-					<p>Adviesprijs 109,- 85,-</p>
-					<p><img src="" alt="">Bak meerdere pizza's tegelijkertijd dankzij de 2 inschuifhoogtes.</p>
-				</div>
+				<img src="images/kleinstudenten.png" alt="">
+				<ul>
+					<li>
+						<a href="">
+							<img src="images/laptop.png" alt="">
+						</a>
+						<a href="">Inventum OV2078</a>
+						<a href="">
+							<svg class="icon icon--size-4 icon--color-green icon--valign-top" aria-hidden="true" viewBox="0 0 99 99" focusable="false"><circle cx="49.5" cy="49.5" r="49.5"></circle><path d="M49.5 99C77.5 99 99 76.8 99 49.5S77.5 0 49.5 0v99z"></path><path fill="var(--cb-icon-color-mask)" d="M53.4 24.2l5 15.6s11.7-.2 16.4-.1c4 0 5.9 4.9 2.4 7.5-3.7 2.6-13.3 9.5-13.3 9.5L69 72.2c1.2 4-3.1 7-6.4 4.6L49.5 65.3 36.3 76.8c-3.4 2.4-7.6-.7-6.4-4.6l5.2-15.5-13.3-9.5c-3.1-2.2-2.1-7.4 2.4-7.5l16.4.1 4.9-15.6c1.4-4.1 6.7-3.7 7.9 0z"></path></svg>
+							<svg class="icon icon--size-4 icon--color-green icon--valign-top" aria-hidden="true" viewBox="0 0 99 99" focusable="false"><circle cx="49.5" cy="49.5" r="49.5"></circle><path d="M49.5 99C77.5 99 99 76.8 99 49.5S77.5 0 49.5 0v99z"></path><path fill="var(--cb-icon-color-mask)" d="M53.4 24.2l5 15.6s11.7-.2 16.4-.1c4 0 5.9 4.9 2.4 7.5-3.7 2.6-13.3 9.5-13.3 9.5L69 72.2c1.2 4-3.1 7-6.4 4.6L49.5 65.3 36.3 76.8c-3.4 2.4-7.6-.7-6.4-4.6l5.2-15.5-13.3-9.5c-3.1-2.2-2.1-7.4 2.4-7.5l16.4.1 4.9-15.6c1.4-4.1 6.7-3.7 7.9 0z"></path></svg>
+							<svg class="icon icon--size-4 icon--color-green icon--valign-top" aria-hidden="true" viewBox="0 0 99 99" focusable="false"><circle cx="49.5" cy="49.5" r="49.5"></circle><path d="M49.5 99C77.5 99 99 76.8 99 49.5S77.5 0 49.5 0v99z"></path><path fill="var(--cb-icon-color-mask)" d="M53.4 24.2l5 15.6s11.7-.2 16.4-.1c4 0 5.9 4.9 2.4 7.5-3.7 2.6-13.3 9.5-13.3 9.5L69 72.2c1.2 4-3.1 7-6.4 4.6L49.5 65.3 36.3 76.8c-3.4 2.4-7.6-.7-6.4-4.6l5.2-15.5-13.3-9.5c-3.1-2.2-2.1-7.4 2.4-7.5l16.4.1 4.9-15.6c1.4-4.1 6.7-3.7 7.9 0z"></path></svg>
+							<svg class="icon icon--size-4 icon--color-green icon--valign-top" aria-hidden="true" viewBox="0 0 99 99" focusable="false"><circle cx="49.5" cy="49.5" r="49.5"></circle><path d="M49.5 99C77.5 99 99 76.8 99 49.5S77.5 0 49.5 0v99z"></path><path fill="var(--cb-icon-color-mask)" d="M53.4 24.2l5 15.6s11.7-.2 16.4-.1c4 0 5.9 4.9 2.4 7.5-3.7 2.6-13.3 9.5-13.3 9.5L69 72.2c1.2 4-3.1 7-6.4 4.6L49.5 65.3 36.3 76.8c-3.4 2.4-7.6-.7-6.4-4.6l5.2-15.5-13.3-9.5c-3.1-2.2-2.1-7.4 2.4-7.5l16.4.1 4.9-15.6c1.4-4.1 6.7-3.7 7.9 0z"></path></svg>
+							<svg class="icon icon--size-4 icon--color-green icon--valign-top" aria-hidden="true" viewBox="0 0 99 99" focusable="false"><path d="M49.7 0h-.2C22.2 0 0 22.2 0 49.5S22.2 99 49.5 99h.2V0z"></path><path fill="var(--cb-spec-color-icon-inactive)" d="M49.5 0h-.2v99h.2C76.8 99 99 76.8 99 49.5S76.8 0 49.5 0z"></path><path fill="var(--cb-icon-color-mask)" d="M53.4 24.2l5 15.6s11.7-.2 16.4-.1c4 0 5.9 4.9 2.4 7.5-3.7 2.6-13.3 9.5-13.3 9.5L69 72.2c1.2 4-3.1 7-6.4 4.6L49.5 65.3 36.3 76.8c-3.4 2.4-7.6-.7-6.4-4.6l5.2-15.5-13.3-9.5c-3.1-2.2-2.1-7.4 2.4-7.5l16.4.1 4.9-15.6c1.4-4.1 6.7-3.7 7.9 0z"></path></svg>
+							74 reviews</a>
+						<p>Adviesprijs 109,- 85,-</p>
+						<p><img src="" alt="">Bak meerdere pizza's tegelijkertijd dankzij de 2 inschuifhoogtes.</p>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/telefoon.png" alt="">
+						</a>
+						<a href="">Inventum OV2078</a>
+						<a href="">
+							<svg class="icon icon--size-4 icon--color-green icon--valign-top" aria-hidden="true" viewBox="0 0 99 99" focusable="false"><circle cx="49.5" cy="49.5" r="49.5"></circle><path d="M49.5 99C77.5 99 99 76.8 99 49.5S77.5 0 49.5 0v99z"></path><path fill="var(--cb-icon-color-mask)" d="M53.4 24.2l5 15.6s11.7-.2 16.4-.1c4 0 5.9 4.9 2.4 7.5-3.7 2.6-13.3 9.5-13.3 9.5L69 72.2c1.2 4-3.1 7-6.4 4.6L49.5 65.3 36.3 76.8c-3.4 2.4-7.6-.7-6.4-4.6l5.2-15.5-13.3-9.5c-3.1-2.2-2.1-7.4 2.4-7.5l16.4.1 4.9-15.6c1.4-4.1 6.7-3.7 7.9 0z"></path></svg>
+							<svg class="icon icon--size-4 icon--color-green icon--valign-top" aria-hidden="true" viewBox="0 0 99 99" focusable="false"><circle cx="49.5" cy="49.5" r="49.5"></circle><path d="M49.5 99C77.5 99 99 76.8 99 49.5S77.5 0 49.5 0v99z"></path><path fill="var(--cb-icon-color-mask)" d="M53.4 24.2l5 15.6s11.7-.2 16.4-.1c4 0 5.9 4.9 2.4 7.5-3.7 2.6-13.3 9.5-13.3 9.5L69 72.2c1.2 4-3.1 7-6.4 4.6L49.5 65.3 36.3 76.8c-3.4 2.4-7.6-.7-6.4-4.6l5.2-15.5-13.3-9.5c-3.1-2.2-2.1-7.4 2.4-7.5l16.4.1 4.9-15.6c1.4-4.1 6.7-3.7 7.9 0z"></path></svg>
+							<svg class="icon icon--size-4 icon--color-green icon--valign-top" aria-hidden="true" viewBox="0 0 99 99" focusable="false"><circle cx="49.5" cy="49.5" r="49.5"></circle><path d="M49.5 99C77.5 99 99 76.8 99 49.5S77.5 0 49.5 0v99z"></path><path fill="var(--cb-icon-color-mask)" d="M53.4 24.2l5 15.6s11.7-.2 16.4-.1c4 0 5.9 4.9 2.4 7.5-3.7 2.6-13.3 9.5-13.3 9.5L69 72.2c1.2 4-3.1 7-6.4 4.6L49.5 65.3 36.3 76.8c-3.4 2.4-7.6-.7-6.4-4.6l5.2-15.5-13.3-9.5c-3.1-2.2-2.1-7.4 2.4-7.5l16.4.1 4.9-15.6c1.4-4.1 6.7-3.7 7.9 0z"></path></svg>
+							<svg class="icon icon--size-4 icon--color-green icon--valign-top" aria-hidden="true" viewBox="0 0 99 99" focusable="false"><circle cx="49.5" cy="49.5" r="49.5"></circle><path d="M49.5 99C77.5 99 99 76.8 99 49.5S77.5 0 49.5 0v99z"></path><path fill="var(--cb-icon-color-mask)" d="M53.4 24.2l5 15.6s11.7-.2 16.4-.1c4 0 5.9 4.9 2.4 7.5-3.7 2.6-13.3 9.5-13.3 9.5L69 72.2c1.2 4-3.1 7-6.4 4.6L49.5 65.3 36.3 76.8c-3.4 2.4-7.6-.7-6.4-4.6l5.2-15.5-13.3-9.5c-3.1-2.2-2.1-7.4 2.4-7.5l16.4.1 4.9-15.6c1.4-4.1 6.7-3.7 7.9 0z"></path></svg>
+							<svg class="icon icon--size-4 icon--color-green icon--valign-top" aria-hidden="true" viewBox="0 0 99 99" focusable="false"><path d="M49.7 0h-.2C22.2 0 0 22.2 0 49.5S22.2 99 49.5 99h.2V0z"></path><path fill="var(--cb-spec-color-icon-inactive)" d="M49.5 0h-.2v99h.2C76.8 99 99 76.8 99 49.5S76.8 0 49.5 0z"></path><path fill="var(--cb-icon-color-mask)" d="M53.4 24.2l5 15.6s11.7-.2 16.4-.1c4 0 5.9 4.9 2.4 7.5-3.7 2.6-13.3 9.5-13.3 9.5L69 72.2c1.2 4-3.1 7-6.4 4.6L49.5 65.3 36.3 76.8c-3.4 2.4-7.6-.7-6.4-4.6l5.2-15.5-13.3-9.5c-3.1-2.2-2.1-7.4 2.4-7.5l16.4.1 4.9-15.6c1.4-4.1 6.7-3.7 7.9 0z"></path></svg>
+							74 reviews</a>
+						<p>Adviesprijs 109,- 85,-</p>
+						<p><img src="" alt="">Bak meerdere pizza's tegelijkertijd dankzij de 2 inschuifhoogtes.</p>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/wasmachine.png" alt="">
+						</a>
+						<a href="">Inventum OV2078</a>
+						<a href="">
+							<svg class="icon icon--size-4 icon--color-green icon--valign-top" aria-hidden="true" viewBox="0 0 99 99" focusable="false"><circle cx="49.5" cy="49.5" r="49.5"></circle><path d="M49.5 99C77.5 99 99 76.8 99 49.5S77.5 0 49.5 0v99z"></path><path fill="var(--cb-icon-color-mask)" d="M53.4 24.2l5 15.6s11.7-.2 16.4-.1c4 0 5.9 4.9 2.4 7.5-3.7 2.6-13.3 9.5-13.3 9.5L69 72.2c1.2 4-3.1 7-6.4 4.6L49.5 65.3 36.3 76.8c-3.4 2.4-7.6-.7-6.4-4.6l5.2-15.5-13.3-9.5c-3.1-2.2-2.1-7.4 2.4-7.5l16.4.1 4.9-15.6c1.4-4.1 6.7-3.7 7.9 0z"></path></svg>
+							<svg class="icon icon--size-4 icon--color-green icon--valign-top" aria-hidden="true" viewBox="0 0 99 99" focusable="false"><circle cx="49.5" cy="49.5" r="49.5"></circle><path d="M49.5 99C77.5 99 99 76.8 99 49.5S77.5 0 49.5 0v99z"></path><path fill="var(--cb-icon-color-mask)" d="M53.4 24.2l5 15.6s11.7-.2 16.4-.1c4 0 5.9 4.9 2.4 7.5-3.7 2.6-13.3 9.5-13.3 9.5L69 72.2c1.2 4-3.1 7-6.4 4.6L49.5 65.3 36.3 76.8c-3.4 2.4-7.6-.7-6.4-4.6l5.2-15.5-13.3-9.5c-3.1-2.2-2.1-7.4 2.4-7.5l16.4.1 4.9-15.6c1.4-4.1 6.7-3.7 7.9 0z"></path></svg>
+							<svg class="icon icon--size-4 icon--color-green icon--valign-top" aria-hidden="true" viewBox="0 0 99 99" focusable="false"><circle cx="49.5" cy="49.5" r="49.5"></circle><path d="M49.5 99C77.5 99 99 76.8 99 49.5S77.5 0 49.5 0v99z"></path><path fill="var(--cb-icon-color-mask)" d="M53.4 24.2l5 15.6s11.7-.2 16.4-.1c4 0 5.9 4.9 2.4 7.5-3.7 2.6-13.3 9.5-13.3 9.5L69 72.2c1.2 4-3.1 7-6.4 4.6L49.5 65.3 36.3 76.8c-3.4 2.4-7.6-.7-6.4-4.6l5.2-15.5-13.3-9.5c-3.1-2.2-2.1-7.4 2.4-7.5l16.4.1 4.9-15.6c1.4-4.1 6.7-3.7 7.9 0z"></path></svg>
+							<svg class="icon icon--size-4 icon--color-green icon--valign-top" aria-hidden="true" viewBox="0 0 99 99" focusable="false"><circle cx="49.5" cy="49.5" r="49.5"></circle><path d="M49.5 99C77.5 99 99 76.8 99 49.5S77.5 0 49.5 0v99z"></path><path fill="var(--cb-icon-color-mask)" d="M53.4 24.2l5 15.6s11.7-.2 16.4-.1c4 0 5.9 4.9 2.4 7.5-3.7 2.6-13.3 9.5-13.3 9.5L69 72.2c1.2 4-3.1 7-6.4 4.6L49.5 65.3 36.3 76.8c-3.4 2.4-7.6-.7-6.4-4.6l5.2-15.5-13.3-9.5c-3.1-2.2-2.1-7.4 2.4-7.5l16.4.1 4.9-15.6c1.4-4.1 6.7-3.7 7.9 0z"></path></svg>
+							<svg class="icon icon--size-4 icon--color-green icon--valign-top" aria-hidden="true" viewBox="0 0 99 99" focusable="false"><path d="M49.7 0h-.2C22.2 0 0 22.2 0 49.5S22.2 99 49.5 99h.2V0z"></path><path fill="var(--cb-spec-color-icon-inactive)" d="M49.5 0h-.2v99h.2C76.8 99 99 76.8 99 49.5S76.8 0 49.5 0z"></path><path fill="var(--cb-icon-color-mask)" d="M53.4 24.2l5 15.6s11.7-.2 16.4-.1c4 0 5.9 4.9 2.4 7.5-3.7 2.6-13.3 9.5-13.3 9.5L69 72.2c1.2 4-3.1 7-6.4 4.6L49.5 65.3 36.3 76.8c-3.4 2.4-7.6-.7-6.4-4.6l5.2-15.5-13.3-9.5c-3.1-2.2-2.1-7.4 2.4-7.5l16.4.1 4.9-15.6c1.4-4.1 6.7-3.7 7.9 0z"></path></svg>
+							74 reviews</a>
+						<p>Adviesprijs 109,- 85,-</p>
+						<p><img src="" alt="">Bak meerdere pizza's tegelijkertijd dankzij de 2 inschuifhoogtes.</p>
+					</li>
+				</ul>
 			</section>
 		</section>
 
