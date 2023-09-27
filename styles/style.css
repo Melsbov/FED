@@ -2,10 +2,22 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+box-sizing:border-box;  
 }
 
 
+/**************/
+/* HELPER CLASSES */
+/**************/
+.sr-only:not(:focus):not(:active) {
+	clip: rect(0 0 0 0); 
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap; 
+	width: 1px;
+  }
 
 
 
@@ -16,14 +28,19 @@
 :root {
 	/* startje */
 	--color-text:#111;
-	--color-background:#eee;
+	--color-white: #ffffff;
+	--color-background:#eeeeee;
+	--color-coolblue-dark: #285dab;
 	--color-coolblue:#0090e3;
+	--color-coolblue-hover: #199be5;
 	--color-background-vakje:#f2f7fc;
 	--color-border-vakje: #dddddd;
+	--color-border-hover: #bbbbbb;
+	--color-text-gray: #666666;
 	--color-coolblue-green: #00b900;
 	--color-coolblue-darkgreen: #009900;
 	--color-coolblue-orange: #ff6600;
-
+	--color-coolblue-lightorange: #fef1e8;
 }
 
 :root {
@@ -47,13 +64,20 @@ section{
 	margin-bottom: 2em;
 }
 
+h1{
+	font-family: var(--font-family);
+	font-size: 1em;
+	color: var(--color-coolblue-dark);
+	font-weight: 1000;
+}
+
 h2 {
 	font-family: var(--font-family);
 	font-size: 1em;
 	margin-bottom: 1em;
 	margin-left: 1em;
 }
- 
+
 h3 {
 	font-family: var(--font-family);
 }
@@ -68,8 +92,13 @@ a{
 	font-size: 0.85em;
 }
 
+strong{
+	color: var(--color-coolblue-orange);
+	font-weight: 600;
+}
+
 body{
-	/* overflow-x: hidden; */
+
 }
 
 body {
@@ -88,12 +117,20 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
 /* .info{
 	display: flex;
 	overflow-x: hidden;
 } */
 
-.test{
+/* .test{
 	overflow-x: hidden;
 }
 
@@ -105,12 +142,21 @@ body {
 .test ul li{
 	display: flex;
 	flex-direction: column;
-}
+} */
 
-/* jouw code */	
-body {
-	margin: 0em;
-}
+
+
+
+
+
+
+
+
+/*********************/
+/*********************/
+/* HEADER */
+/*********************/
+/*********************/
 
 header{
 	display: flex;
@@ -150,19 +196,134 @@ header>form>button{
 	border-radius: 0px 3px 3px 0px;
 }
 
+header button:hover{
+	background-color: var(--color-coolblue-hover);	
+}
+
 header>form>button>svg{
 	height: 60%;
 	fill: var(--color-background);
 }
 
 header>nav{
+	width: 10em;
 	height: 2.75em;
 	display: flex;
 	align-items: center;
 }
 
+.items{
+	display: none;
+}
+
+/* .items li button{
+	background-color: transparent;
+	border-style: none;
+	display: flex;
+} */
+
+.items ul li{
+	/* display: none; */
+}
+
 nav ul{
 	display: none;
+}
+
+.extraVisible{
+	display: block;
+    position: fixed;
+    top: 3em;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: red;
+    z-index: 2;
+	width: 20em;
+}
+
+.visible{
+	top: 0em;
+	height: 100%;
+	width: 20em;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color-white);
+	list-style: none;
+	z-index: 3;
+	overflow-y: scroll;
+}
+
+.visible section{
+	background-color: var(--color-coolblue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 3em;
+	position: relative;
+	margin: 0;
+}
+
+.visible h3{
+	color: var(--color-white);
+}
+
+.visible section button{
+	position: absolute;
+	right: 1em;
+	width: 1em;
+	height: 1em;
+	border-style: none;
+	background-color: transparent;
+	fill: var(--color-white);
+}
+
+
+.visible li{
+	border-bottom: 1px solid var(--color-border-vakje);
+	position: relative;
+}
+
+.visible li button{
+	display: flex;
+	align-items: center;
+	height: 4em;
+	text-decoration: none;
+	color: var(--color-text);
+	background-color: transparent;
+	border: none;
+}
+
+.visible img{
+	width: 4em;
+	margin-left: 1em;
+}
+
+.visible li svg{
+	width: 0.5em;
+	fill: var(--color-border-hover);
+	position: absolute;
+	right: 1em;
+}
+
+.visible p{
+	text-decoration: none;
+	margin-left: 1em;
+}
+
+.scroll{
+	overflow-y: hidden;
+}
+
+.dark{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 3;
 }
 
 .assortiment{
@@ -173,17 +334,17 @@ header>nav>button{
 	display: flex;
 	justify-content:start;
 	align-items: center;
-	width: 10em;
 	height: 2em;
 	background-color: transparent;
 	border: none;
 	align-items: center;
 	fill: var(--color-background);
+	margin-left: 1em;
 }
 
 header>nav>button>svg{
 	height: 80%;
-	margin: 1em;
+	/* margin: 1em; */
 }
 
 header>a:first-of-type{
@@ -231,20 +392,87 @@ header>ul>li:nth-of-type(1)>button>svg:last-of-type{
 
 
 
+
+
+
+
+
+
+/*********************/
+/*********************/
+/* TEST */
+/*********************/
+/*********************/
+
+.test {
+	
+}
+
+.test a{
+	text-decoration: none;
+	color: var(--color-text);
+}
+
+.test a:hover{
+	color: var(--color-coolblue);
+}
+
+.test svg{
+	height: 1em;
+	fill: var(--color-coolblue-green);
+}
+
+.test ul{
+	margin-top: 1em;
+	padding: 0em 1em 0em 1em;
+	list-style: none; 
+}
+
+.test ul:nth-of-type(2){
+	margin-top: 1em;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.test ul:nth-of-type(2) li a{
+	color: var(--color-coolblue);
+	font-weight: 600;
+}
+
+.test ul:nth-of-type(2) li a:hover{
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+/*********************/
+/*********************/
+/* INFO */
+/*********************/
+/*********************/
+
 .info ul{
 	display: flex;
 	list-style: none;
 	overflow-x: auto;
 	flex-wrap: nowrap;
-	/* background-color: #00b900; */
+	scroll-snap-type: mandatory;
 	gap: 1em;
+	padding: 0em 1em 0em 1em;
 }
 
 .info ul li{
-
+	scroll-snap-align: center;
 }
 
-.info ul:first-of-type li a {
+.info ul:first-of-type li a:first-of-type {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
@@ -263,7 +491,7 @@ header>ul>li:nth-of-type(1)>button>svg:last-of-type{
 }
 
 .info a p{
-	max-width: 10em;
+	max-width: 13em;
 	position: relative;
 	grid-column-start: 1;
 	grid-row-start: 1;
@@ -273,10 +501,31 @@ header>ul>li:nth-of-type(1)>button>svg:last-of-type{
 	padding-left: 1em;
 }
 
-.info>a {
+.info li{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.info ul li a:first-of-type:hover{
+	border-color: var(--color-border-hover);
+	filter: drop-shadow(1px 1px 2px var(--color-border-hover));
+}
+
+.info li a:nth-of-type(2) {
+	margin-top: 1em;
 	text-decoration: none;
 	color: var(--color-text);
-	
+
+}
+
+.info li a:nth-of-type(2):hover {
+	color: var(--color-coolblue);
+}
+
+.info li a:nth-of-type(2) svg {
+	height: 1em;
+	fill: var(--color-coolblue);
 }
 
 
@@ -284,12 +533,18 @@ header>ul>li:nth-of-type(1)>button>svg:last-of-type{
 
 
 
+
+
+/*********************/
+/*********************/
 /*BLADER DOOR ONZE CATEGORIEËN*/
+/*********************/
+/*********************/
 
-body section:nth-of-type(4) h2{
+.blader h2{
 }
 
-body section:nth-of-type(4)>ul{
+.blader>ul{
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
@@ -301,7 +556,7 @@ body section:nth-of-type(4)>ul{
 }
 
 
-body section:nth-of-type(4)>ul li a{
+.blader>ul li a{
 	width: 13.5em;
 	height: 10em;
 	background-color: var(--color-background-vakje);
@@ -319,12 +574,20 @@ body section:nth-of-type(4)>ul li a{
 	overflow-y: hidden;
 }
 
-body section:nth-of-type(4)>ul li a img{
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow */
+
+.blader>ul li a:hover{
+	border-color: var(--color-border-hover);
+	filter: drop-shadow(1px 1px 2px var(--color-border-hover));
+}
+
+
+.blader>ul li a img{
 	width: 160px;
 	height: 100px;
 }
 
-body section:nth-of-type(4)>ul li a p{
+.blader>ul li a p{
 	background-color: white;
 	font-weight: 600;
 	width: 20em;
@@ -332,12 +595,15 @@ body section:nth-of-type(4)>ul li a p{
 	color: 	var(--color-coolblue);
 }
 
-body section:nth-of-type(4)>a {
+.blader>a {
 	color: var(--color-coolblue);
 	text-decoration: none;
 	margin-left: 1em;
 }
 
+.blader>a:hover {
+	text-decoration: underline;
+}
 
 
 
@@ -345,13 +611,22 @@ body section:nth-of-type(4)>a {
 
 
 
+
+
+
+
+/*********************/
+/*********************/
 /* Ontdek de verschillende merken */
-body section:nth-of-type(5){
+/*********************/
+/*********************/
+
+.ontdek{
 	display: flex;
 	flex-direction: column;
 }
 
-body section:nth-of-type(5)>ul{
+.ontdek>ul{
 	list-style: none;
 	padding: 0;
 	display: flex;
@@ -363,9 +638,10 @@ body section:nth-of-type(5)>ul{
 	scroll-snap-type: x mandatory; */
 }
 
-body section:nth-of-type(5)>ul>li{
+.ontdek>ul>li{
 	width: 80%;
-	min-width: 80%;
+	min-width: 15em;
+	max-width: 20em;
 	margin: 0em 1em 1em 1em;
 	border-radius: 10px;
 	border-color: var(--color-border-vakje);
@@ -374,30 +650,35 @@ body section:nth-of-type(5)>ul>li{
 	background-color: rgb(255, 255, 255);
 }
 
-body section:nth-of-type(5)>ul>li a{
+.ontdek>ul>li:hover{
+	border-color: var(--color-border-hover);
+	filter: drop-shadow(1px 1px 2px var(--color-border-hover));
+}
+
+.ontdek>ul>li a{
 	display: flex;
 	flex-direction: column;
 	align-items: start;
 }
 
-body section:nth-of-type(5)>ul>li>a:first-of-type{
+.ontdek>ul>li>a:first-of-type{
 	text-decoration: none;
 }
 
-body section:nth-of-type(5)>ul>li img{
+.ontdek>ul>li img{
 	width: 100%;
 	height: auto;
 	border-radius: 10px 10px 0px 0px;
 
 }
 
-body section:nth-of-type(5)>ul>li p{
+.ontdek>ul>li p{
 	background-color: white;
 	color: #000;
 	margin: 0em 1em 0em 1em;
 }
 
-body section:nth-of-type(5)>ul>li h3{
+.ontdek>ul>li h3{
 	background-color: white;
 	color: var(--color-coolblue);
 	font-weight: 600;
@@ -405,22 +686,22 @@ body section:nth-of-type(5)>ul>li h3{
 	margin: 1em;
 }
 
-body section:nth-of-type(5)>ul>li>a:not(:first-of-type){
+.ontdek>ul>li>a:not(:first-of-type){
 	text-decoration: none;
 }
 
-body section:nth-of-type(5)>ul>li ul{
+.ontdek>ul>li ul{
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
 	padding: 1em;
 }
 
-body section:nth-of-type(5)>ul>li ul li{
+.ontdek>ul>li ul li{
 	font-family: var(--font-family);
 }
 
-body section:nth-of-type(5)>ul>li ul li:not(:last-of-type){
+.ontdek>ul>li ul li:not(:last-of-type){
 	padding-right:1em; 
 	margin-right: 1em;
 	border-color: var(--color-border-vakje);
@@ -428,14 +709,14 @@ body section:nth-of-type(5)>ul>li ul li:not(:last-of-type){
 	border-width: 1px;
 }
 
-body section:nth-of-type(5)>ul>li ul li a{
+.ontdek>ul>li ul li a{
 	text-decoration: none;
 	color: var(--color-coolblue);
 	font-size: 0.85em;
 
 }
 
-body section:nth-of-type(5)>a {
+.ontdek>a {
 	color: var(--color-coolblue);
 	text-decoration: none;
 	margin-left: 1em;
@@ -448,7 +729,15 @@ body section:nth-of-type(5)>a {
 
 
 
+
+
+
+
+/*********************/
+/*********************/
 /* Dit heb je eerder bekeken */
+/*********************/
+/*********************/
 
 .eerder{
 }
@@ -518,4 +807,203 @@ body section:nth-of-type(5)>a {
 .eerder section section:nth-of-type(2) a:nth-of-type(2){
 	text-decoration: none;
 	color: var(--color-coolblue);
+}
+
+.eerder svg{
+	height: 1em;
+	fill: var(--color-coolblue-green);
+}
+
+.eerder svg path:nth-of-type(2){
+	fill: var(--color-white);
+}
+
+.eerder svg:nth-of-type(5) path:nth-of-type(2){
+	fill: var(--color-border-vakje)
+}
+
+.eerder svg:nth-of-type(5) path:nth-of-type(3){
+	fill: var(--color-white)
+}
+
+
+
+
+
+/*********************/
+/*********************/
+/* Studenten */
+/*********************/
+/*********************/
+
+.studenten{
+	
+}
+
+.studenten>section{
+	position: relative;
+}
+
+.studenten>section>img{
+	position: absolute;
+	overflow-x: hidden;
+	width: 100%;
+}
+
+.studenten ul {
+	position: relative;
+	display: flex;
+	overflow-x: auto;
+	top: 10em;
+	gap: 1em;
+}
+
+.studenten li {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color-white);
+	width: 20em;
+	height: 20em;
+	padding: 1em;
+}
+
+.studenten li a:first-of-type {
+	display: flex;
+	justify-content: center;	
+}
+
+.studenten li a {
+	text-decoration: none;
+}
+
+.studenten li img{
+	height: 10em;
+}
+
+.studenten ul li a:nth-of-type(2){
+	color: var(--color-coolblue);
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 1em;
+}
+
+.studenten ul li a:nth-of-type(3){
+	color: var(--color-coolblue);
+	text-decoration: none;
+}
+
+.studenten svg{
+	height: 1em;
+	fill: var(--color-coolblue-green);
+}
+
+.studenten svg path:nth-of-type(2){
+	fill: var(--color-white);
+}
+
+.studenten svg:nth-of-type(5) path:nth-of-type(2){
+	fill: var(--color-border-vakje)
+}
+
+.studenten svg:nth-of-type(5) path:nth-of-type(3){
+	fill: var(--color-white)
+}
+
+
+
+
+
+
+
+
+
+
+/*********************/
+/*********************/
+/* stofzuiger */
+/*********************/
+/*********************/
+
+.stofzuiger{
+	margin: 1em
+}
+
+.stofzuiger svg{
+	height: 1em;
+	fill: var(--color-coolblue-green);
+}
+
+.stofzuiger svg path:nth-of-type(2){
+	fill: var(--color-white);
+}
+
+.stofzuiger svg:nth-of-type(5) path:nth-of-type(2){
+	fill: var(--color-border-vakje)
+}
+
+.stofzuiger svg:nth-of-type(5) path:nth-of-type(3){
+	fill: var(--color-white)
+}
+
+.stofzuiger a{
+	text-decoration: none;
+}
+
+.stofzuiger section>img{
+	width: 80%;
+}
+
+.stofzuiger section button img{
+	width: 80%;
+}
+
+.stofzuiger section button:not(:first-of-type){
+	border: 1px solid var(--color-border-vakje);
+	border-radius: 5px;
+	background-color: transparent;
+}
+
+.stofzuiger section>button:first-of-type{
+	padding: 4px;
+	border-style: none;
+	border-radius: 5px;
+	background-color: var(--color-coolblue-lightorange);
+	color: var(--color-coolblue-orange);
+	font-weight: 600;
+}
+
+.stofzuiger s{
+	color:var(--color-text-gray)
+}
+
+.stofzuiger section>p>strong {
+	color: var(--color-text);
+	font-weight: 600;
+}
+
+.stofzuiger ul{
+	list-style: none;
+}
+
+.stofzuiger section section{
+	position: fixed;
+	bottom: 0em;
+	display: flex;
+	width: 100%;
+	gap: 1em;
+}
+
+.stofzuiger section section button:first-of-type{
+	width: 80%;
+	height: 4em;
+	background-color: #00b900;
+	color: var(--color-white);
+}
+
+.stofzuiger section section button svg{
+	fill: var(--color-white);
+}
+
+.stofzuiger section section button{
+	width: 20%;
 }
