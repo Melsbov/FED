@@ -3,7 +3,7 @@ console.log("hi");
 
 var menu = document.querySelector('.menu');
 var items = document.querySelector('.items');
-var close = document.querySelector('.items section button');
+var close = document.querySelector('.items li:first-of-type button');
 var body = document.querySelector('body');
 var div = document.querySelector('body>div');
 var computer = document.querySelector('.computer');

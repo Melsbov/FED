@@ -14,7 +14,7 @@ box-sizing:border-box;
 	clip-path: inset(50%);
 	height: 1px;
 	overflow: hidden;
-	position: absolute;
+	/* position: absolute; */
 	white-space: nowrap; 
 	width: 1px;
   }
@@ -60,7 +60,7 @@ box-sizing:border-box;
 	padding: 0;
 }
 
-section{
+main>section{
 	margin-bottom: 2em;
 }
 
@@ -255,21 +255,21 @@ nav ul{
 	overflow-y: scroll;
 }
 
-.visible section{
+.visible li:first-of-type{
 	background-color: var(--color-coolblue);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 3em;
 	position: relative;
 	margin: 0;
 }
 
 .visible h3{
 	color: var(--color-white);
+	line-height: 2.5em;
 }
 
-.visible section button{
+.visible li:first-of-type button{
 	position: absolute;
 	right: 1em;
 	width: 1em;
@@ -307,6 +307,12 @@ nav ul{
 	right: 1em;
 }
 
+.visible li:first-of-type svg{
+	width: 1.25em;
+	fill: var(--color-white);
+	right: 0em;
+}
+
 .visible p{
 	text-decoration: none;
 	margin-left: 1em;
@@ -328,6 +334,19 @@ nav ul{
 
 .assortiment{
 	display: none;
+}
+
+@media only screen and (min-width: 55em) {
+	.extraVisible {
+		width: 35%
+	}
+	.visible {
+		width: 35%
+	}
+	.visible li button{
+		height: 6em;
+	}
+
 }
 
 header>nav>button{
@@ -745,18 +764,15 @@ header>ul>li:nth-of-type(1)>button>svg:last-of-type{
 .eerder>section{
 	display: flex;
 	overflow-x: scroll;
+	margin: 0em 1em 0em 1em;
 }
 
 .eerder>section section{
 	display: flex;
 	flex-direction: column;
+	max-width: 15em;
 	min-width: 15em;
 	min-height: 10em;
-	margin-left: 1em;
-}
-
-.eerder section section:first-of-type a:first-of-type{
-
 }
 
 .eerder section section:first-of-type a:nth-of-type(2){
@@ -841,20 +857,17 @@ header>ul>li:nth-of-type(1)>button>svg:last-of-type{
 }
 
 .studenten>section{
-	position: relative;
-}
-
-.studenten>section>img{
-	position: absolute;
-	overflow-x: hidden;
-	width: 100%;
+	/* position: relative; */
+	background-color: var(--color-coolblue);
+	padding: 1em 0em 1em 1em;
+	display: flex;
+	/* align-items: center; */
+	gap: 3em;
 }
 
 .studenten ul {
-	position: relative;
 	display: flex;
 	overflow-x: auto;
-	top: 10em;
 	gap: 1em;
 }
 
@@ -862,9 +875,10 @@ header>ul>li:nth-of-type(1)>button>svg:last-of-type{
 	display: flex;
 	flex-direction: column;
 	background-color: var(--color-white);
-	width: 20em;
+	min-width: 20em;
 	height: 20em;
 	padding: 1em;
+	border-radius: 5px;
 }
 
 .studenten li a:first-of-type {
@@ -908,6 +922,103 @@ header>ul>li:nth-of-type(1)>button>svg:last-of-type{
 .studenten svg:nth-of-type(5) path:nth-of-type(3){
 	fill: var(--color-white)
 }
+
+
+
+
+
+
+
+.studenten section{
+	/* align-items: center; */
+}
+
+.studenten section section{
+	gap: 1em;
+}
+
+.studenten section section p:first-of-type{
+	margin-bottom: 1em;
+	color: var(--color-white);
+	font-size: 1.5em;
+	font-weight: 600;
+}
+
+.studenten section section p:first-of-type span{
+	background-color: var(--color-coolblue-orange);
+	padding: 0.2em;
+}
+
+.studenten section section h3{
+	color: var(--color-white);
+	margin-bottom: 1em;
+	font-size: 2em;
+}
+
+.studenten section section p{
+	color: var(--color-white);
+}
+
+@media only screen and (max-width: 30em) {
+	.studenten section section h3{
+		font-size: 1em;
+	}
+}
+
+
+@media only screen and (max-width: 50em) {
+
+	.studenten section section{
+		flex-direction: column;
+	}
+
+	.studenten section section p:first-of-type{
+		margin-bottom: 0em;
+	}
+
+	.studenten section section h3{
+		margin-bottom: 0em;
+	}
+	
+	.studenten>section{
+		padding: 1em 0em 1em 1em;
+	}
+}
+
+@media only screen and (max-width: 62em) {
+	.studenten>section{
+		/* align-items: start; */
+		flex-direction: column;
+		gap: 1em;
+	}
+
+	.studenten ul{
+		overflow-x: auto;
+	}
+
+	.studenten section section{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.studenten section section h3{
+		text-align: center;
+		margin-bottom: 0em;
+	}
+
+	.studenten section section p:first-of-type{
+		margin-bottom: 0em;
+	}
+}
+
+@media only screen and (min-width: 62em) {
+	.studenten>section{
+		align-items: center;
+	}
+}
+
 
 
 
