@@ -175,11 +175,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Ik heb een website die er opzich oke uitziet maar ik moet nog erg veel doen met toegankelijkheid.
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+Ik heb niks met een groepje besproken.
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
@@ -189,12 +188,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Voor mij is het de bedoeling dat ik eerst zorg dat mijn website werkt en dan zorgen maken over de rest.
 
 </details>
 
@@ -212,14 +206,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
+  Het ging opzich goed om de elementen te bouwen, en dat deze er dan ook uizagen zoals op de echte website.
+  Uiteindelijk ben ik best tevreden met de responsiveness van mijn website. Ik heb erg veel mee geklooit maar uiteindelijk is dat goed gekomen.
+  Op het einde heb ik nog eventjes snel een 2e javascript bestandje gemaakt omdat een deel in de weg stond voor het andere, eerst dacht ik dat het andersom zetten het zou oplossen, dat werkte ook, maar dan deed hij het nietmeer op die andere pagina. Ik was best wel trots op mijzelf dat ik het probleem zo snel had gevonden en wist op te lossen.
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
-
+Ik had problemen met mijn menu in het begin omdat ik niet goed kon bedenken en het voor mij zien van hoe ik zo iets moest maken omdat er best wel veel veranderde in het menu op de echte site als je de breedte groter of kleiner maakte. Daarnaast heb ik erg veel problemen gehad met de screenreader. Hij wilde sommige dingen niet voorlezen. Hij las rare dingen voor als ik op een item zat, en dan ging ik heen en terug om te herluisteren en dan zei die het een paar keer hetzelfde en daarna nietmeer. Ook werdt ik helemaal gek van de screenreader omdat ik hem steeds aan en uit moest zetten om een klein dingentje aan te passen. Ik heb problemen gehad met het responsive maken van de website omdat ik er niet echt uit kon komen hoe ik de items wilde hebben staan. Hier ben ik uiteindelijk wel uitgekomen maar dat heeft wel even geduurt. 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
@@ -231,13 +225,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
+ 
+  1. https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-label
+  2. https://blog.hubspot.com/website/html-strikethrough
+  3. https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow
+  4. https://codepen.io/shooft/pen/NWePYRO
+  5. https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollLeft
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
-
-  1. bron 1
-  2. bron 2
-  3. ...
 
 </details>
