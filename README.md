@@ -67,6 +67,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Images hebben geen alt tags.
   Er gaan ook wat dingentjes mis bij de links en buttons. 
   Ook zitten er in de website zelf geen manieren om het uiterlijk van de website aan te passen.
+  <img src="readme-images/WCAGchecklist1.png" width="375px" alt="WCAGchecklist">
+  <img src="readme-images/WCAGchecklist2.png" width="375px" alt="WCAGchecklist">
+  <img src="readme-images/WCAGchecklist3.png" width="375px" alt="WCAGchecklist">
+  <img src="readme-images/WCAGchecklist4.png" width="375px" alt="WCAGchecklist">
+  <img src="readme-images/WCAGchecklist5.png" width="375px" alt="WCAGchecklist">
+  <img src="readme-images/WCAGchecklist6.png" width="375px" alt="WCAGchecklist">
+  <img src="readme-images/WCAGchecklist7.png" width="375px" alt="WCAGchecklist">
+  <img src="readme-images/WCAGchecklist8.png" width="375px" alt="WCAGchecklist">
+
 
 </details>
 
@@ -154,6 +163,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Ik moet nog heel veel aanpassen, ik ben ook nog niet klaar met de html en css van mijn website. 
   Ik heb nog wat problemen zitten in de grootte van knoppen, ook moet ik nog goed kijken naar de volgorde van mijn headings.
   Ook moet ik nog alt text toevoegen aan mijn images. Daarnaast moet ik ook kijken naar mijn buttons/links.
+
+  De afbeeldingen van de Toegankelijkheidstest zijn hetzelfde als de eerste.
+  <img src="readme-images/WCAGchecklist1.png" width="375px" alt="WCAGchecklist">
+  <img src="readme-images/WCAGchecklist2.png" width="375px" alt="WCAGchecklist">
+  <img src="readme-images/WCAGchecklist3.png" width="375px" alt="WCAGchecklist">
+  <img src="readme-images/WCAGchecklist4.png" width="375px" alt="WCAGchecklist">
+  <img src="readme-images/WCAGchecklist5.png" width="375px" alt="WCAGchecklist">
+  <img src="readme-images/WCAGchecklist6.png" width="375px" alt="WCAGchecklist">
+  <img src="readme-images/WCAGchecklist7.png" width="375px" alt="WCAGchecklist">
+  <img src="readme-images/WCAGchecklist8.png" width="375px" alt="WCAGchecklist">
   
 </details>
 
